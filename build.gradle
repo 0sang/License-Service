@@ -24,7 +24,7 @@ repositories {
 }
 
 ext {
-    dockerImagePrefix = 'licensing-service' // docker.image.prefix 대체
+    dockerImagePrefix = 'ostock' // docker.image.prefix 대체
 }
 
 dependencies {
@@ -52,4 +52,5 @@ bootBuildImage {
 
 bootJar {
     archiveFileName = "${project.name}-${project.version}.jar"
+    layered {enabled = true}
 }

@@ -35,3 +35,15 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### docker build artifacts ###
+/BOOT-INF/
+/dependencies/
+/licensing-service-0.0.1-SNAPSHOT/
+/application/
+/spring-boot-loader/
+
+### snapshot and build ###
+*.jar
+*.war
+*.ear
