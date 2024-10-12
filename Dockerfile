@@ -59,4 +59,5 @@ COPY --from=build /application/snapshot-dependencies/ ./
 COPY --from=build /application/application/ ./
 
 # JAR 파일 실행
-ENTRYPOINT ["java", "org.springframework.boot.loader.JarLauncher"]
+# ENTRYPOINT ["java", "org.springframework.boot.loader.JarLauncher"]
+ENTRYPOINT ["java", "org.springframework.boot.loader.launch.JarLauncher"]

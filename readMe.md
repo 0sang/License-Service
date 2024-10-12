@@ -13,7 +13,7 @@ docker images
 도커 컨테이너 실행
 docker run -d -p 8080:8080 ostock/licensing-service:0.0.1-SNAPSHOT
 컨테이너 실행 상태 확인
-docker ps, 실행했는데 실행되고 있는 컨테이너가 없을 경우 docker ps(종료 로그도 남음)
+docker ps, 실행했는데 실행되고 있는 컨테이너가 없을 경우 docker ps -a(종료 로그도 남음)
 
 레이어 활성화 방법
 build.gradle
